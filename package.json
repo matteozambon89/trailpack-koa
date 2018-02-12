@@ -1,0 +1,61 @@
+{
+  "name": "trailpack-koa",
+  "version": "0.0.0",
+  "description": "Koa for Trails.JS (via Trailpack)",
+  "homepage": "http://trailsjs.io",
+  "author": {
+    "name": "Matteo Zambon",
+    "email": "matteo@yeeti.co",
+    "url": "https://github.com/matteozambon89"
+  },
+  "main": "lib/index.js",
+  "keywords": [
+    "trails",
+    "trailpack",
+    "koa",
+    "socket.io",
+    "spdy",
+    "https",
+    "ssl"
+  ],
+  "repository": "https://github.com/matteozambon89/trailpack-koa",
+  "license": "MIT",
+  "dependencies": {
+    "boom": "^7.1.1",
+    "cors": "^2.8.4",
+    "env-var": "^3.1.0",
+    "joi": "^13.1.2",
+    "kcors": "2",
+    "koa-better-error-handler": "^1.3.5",
+    "koa-bodyparser": "^4.2.0",
+    "koa-compress": "^2.0.0",
+    "koa-mount": "^3.0.0",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.8.1",
+    "koa-static": "^4.0.2",
+    "lodash": "^4.17.5",
+    "pem": "^1.12.3",
+    "pify": "^3.0.0",
+    "socketio-sticky-session": "^0.4.3",
+    "spdy": "^3.4.7"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-trails": "^3.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-markdown": "^1.0.0-beta.6",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "koa": "^2.5.0",
+    "socket.io": "^2.0.4"
+  },
+  "eslintConfig": {
+    "extends": "trails"
+  },
+  "scripts": {
+    "eslint": "./node_modules/.bin/eslint --ext .json --ext .js ."
+  }
+}
