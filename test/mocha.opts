@@ -1,8 +1,11 @@
+./test/index.js
+./test/integration/**.test.js
+
 --reporter spec
+--slow 50
+--timeout 10000
 --recursive
 --full-trace
---no-exit
 --slow 50
---check-leaks
 --globals app
---fgrep app.js --invert
+--no-exit

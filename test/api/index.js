@@ -1,11 +1,11 @@
 /**
  * @Author: Matteo Zambon <Matteo>
- * @Date:   2018-02-11 01:17:42
+ * @Date:   2018-02-13 12:45:38
  * @Last modified by:   Matteo
- * @Last modified time: 2018-02-12 11:28:11
+ * @Last modified time: 2018-02-13 12:45:42
  */
-
-'use strict'
 
 exports.controllers = require('./controllers')
 exports.policies = require('./policies')
+exports.models = require('./models')
+exports.services = require('./services')
