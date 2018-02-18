@@ -1,0 +1,18 @@
+# @Author: Matteo Zambon <Matteo>
+# @Date:   2018-02-18 12:46:07
+# @Last modified by:   Matteo
+# @Last modified time: 2018-02-18 01:06:26
+
+language: node_js
+node_js:
+- 8
+deploy:
+  provider: npm
+  email: matteo@thetophat.org
+  on:
+    tags: true
+    repo: matteozambon89/trailpack-swagger
+    branch: master
+    node: 6
+  api_key:
+    secure: DzQUmQCy1A6w3cXi5ZRdxk0DshyjeBgBOJUIgFZStWM0cXybF4+mpNEpLZa0Ud6DwCLkbA50CpvhBM0kTXlBogoginC0ihBsZ2LpzAhholzNvFSpDct+y9/l6nPSxJdBSQ3eSxNVIzf7zLlENygbv2IzZK57um5FBGc0kKQSMAcw7nVaPHj2liUga7MZEc84q+uYWuh/f+v3Hkf6szLhQgY99mS5bLi7sK8uJjaZHslXasodgn4fCToSnRRZBFEvyyuyqo7Xid2tMLbUUoSXvjfKUni1O4WDobLTzlCczMu5rbmuns1nfHsRrbPRBbwL+7VzOORSJSwu07EWNqFbHVFBatNHuyy0G8yhfqOz9aK4QCwsbps7Q4VFuFCKRbH0M1j9kB4F4lZ2rhtW2Sic8utfhxo5RYOr2hWPwEuMOzZf2O/OvpoR0OKx9d8622yTcgxUN9Ou37+BOLU51QtbZbQBAvRPe5zYKAKIeU5g9MycxBgySEvdogHo8iktlV4bpdcx31CgfMq+/KJHRlXao8NGVO4NBTYHSyW0z47QERXGMRL/C9M4Ase7gKyMvbeJpHP4tc64cImEjZeZ1wfD5HKgk/4i+EOTESnt8TD6arsJVjAWErNSKTBCMwsU4nfcyCpOv0oG+4SqK8tu+UKOKoWo0MDPufcTsbRH7R3z6v4=
