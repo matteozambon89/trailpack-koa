@@ -6,6 +6,19 @@
 language: node_js
 node_js:
 - 8
+
+env:
+  global:
+    - CC_TEST_REPORTER_ID=8cd43a5c59bf0bc54f8b375d1127885672081b67365d1fc8ec920cd9b336a4de
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
 deploy:
   provider: npm
   email: matteo@thetophat.org
