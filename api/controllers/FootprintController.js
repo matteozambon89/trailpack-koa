@@ -2,12 +2,12 @@
  * @Author: Matteo Zambon <Matteo>
  * @Date:   2018-02-12 11:41:41
  * @Last modified by:   Matteo
- * @Last modified time: 2018-02-13 01:07:52
+ * @Last modified time: 2018-02-18 01:20:29
  */
 
 'use strict'
 
-const Boom = require('Boom')
+const Boom = require('boom')
 
 const manageErrors = (app, error) => {
   app.log.error(error)
