@@ -2,7 +2,7 @@
  * @Author: Matteo Zambon <Matteo>
  * @Date:   2018-02-12 01:13:34
  * @Last modified by:   Matteo
- * @Last modified time: 2018-02-17 11:58:17
+ * @Last modified time: 2018-02-18 02:24:13
  */
 
 'use strict'
@@ -124,6 +124,18 @@ module.exports = {
    * @type {object}
    */
   bodyparser: true,
+  /**
+   * Feature koa-respond
+   * https://www.npmjs.com/package/koa-respond
+   * @type {object}
+   */
+  respond: true,
+  /**
+   * Feature default koa-static options
+   * https://www.npmjs.com/package/koa-static
+   * @type {object}
+   */
+  // serve: {},
 
   /**
    * Middlewares
@@ -139,6 +151,7 @@ module.exports = {
   //   'cors',
   //   'session',
   //   'bodyparser',
+  //   'respond',
   //   'router',
   //   '404'
   // ]

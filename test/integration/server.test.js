@@ -2,7 +2,7 @@
  * @Author: Matteo Zambon <Matteo>
  * @Date:   2018-02-15 08:15:09
  * @Last modified by:   Matteo
- * @Last modified time: 2018-02-17 08:22:57
+ * @Last modified time: 2018-02-18 02:20:39
  */
 
 'use strict'
@@ -32,6 +32,9 @@ describe('Koa options', () => {
 
     expect(global.app.config.web.middlewares.bodyparser).to.exist
     expect(global.app.config.web.middlewares.bodyparser).to.be.a('function')
+
+    expect(global.app.config.web.middlewares.respond).to.exist
+    expect(global.app.config.web.middlewares.respond).to.be.a('function')
 
     expect(global.app.config.web.middlewares['404']).to.exist
     expect(global.app.config.web.middlewares['404']).to.be.a('function')
