@@ -2,7 +2,7 @@
  * @Author: Matteo Zambon <Matteo>
  * @Date:   2018-02-12 01:13:40
  * @Last modified by:   Matteo
- * @Last modified time: 2018-02-18 12:00:09
+ * @Last modified time: 2018-02-18 05:16:44
  */
 
 'use strict'
@@ -13,13 +13,13 @@ module.exports = {
   * @type {function}
   * @required
   */
-  scoketIo: require('socket.io'),
+  socketIo: require('socket.io'),
   /**
    * Better customize Scoket.io
    * @type {function}
    * @required
    */
-  init: (trailsApp, koaApp) => {},
+  init: (trailsApp, socketApp) => {},
   /**
    * Socket.io parameters
    * https://www.npmjs.com/package/socket.io
