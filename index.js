@@ -2,7 +2,7 @@
  * @Author: Matteo Zambon <Matteo>
  * @Date:   2018-02-11 01:17:42
  * @Last modified by:   Matteo
- * @Last modified time: 2018-02-17 09:02:54
+ * @Last modified time: 2018-03-07 08:06:39
  */
 
 'use strict'
@@ -44,11 +44,6 @@ module.exports = class KoaTrailpack extends ServerTrailpack {
    */
   configure() {
     return Promise.all([
-      () => {
-        this.app.config.set('web.server', 'koa')
-
-        return Promise.resolve()
-      },
       // Utilize JOI validator to set the formatted config
       lib.Validator.validateConfigMain(this.app),
       // Utilize JOI validator to set the formatted config
@@ -57,9 +52,9 @@ module.exports = class KoaTrailpack extends ServerTrailpack {
       lib.Validator.validateConfigSocket(this.app)
     ])
       .then((result) => {
-        this.app.config.set('main', result[1])
-        this.app.config.set('web', result[2])
-        this.app.config.set('socket', result[3])
+        this.app.config.set('main', result[0])
+        this.app.config.set('web', result[1])
+        this.app.config.set('socket', result[2])
       })
   }
 
